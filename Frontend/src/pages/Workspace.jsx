@@ -36,6 +36,8 @@ const deskLayouts = {
     { id: 8, name: 'Стол 8', left: '56%', top: '46%', width: '10%', height: '16%', trackable: false },
     { id: 9, name: 'Стол 9', left: '43%', top: '64%', width: '24%', height: '16%' },
     { id: 10, name: 'Стол 10', left: '83%', top: '28%', width: '12%', height: '22%' },
+    { id: 11, name: 'Стол 11', left: '83%', top: '52%', width: '12%', height: '22%' },
+    { id: 12, name: 'Стол 12', left: '83%', top: '76%', width: '12%', height: '22%' },
   ],
 };
 
@@ -473,7 +475,7 @@ const Workspace = () => {
           <div className="rounded-xl border border-amber-200 bg-amber-50 p-3 text-sm text-amber-800">
             Кабинет <span className="font-semibold">{user.office}</span> не найден на сервере. Создай комнаты в админке
             (например, названия <span className="font-semibold">401</span> и <span className="font-semibold">407</span>)
-            и места с номерами <span className="font-semibold">1..9</span> для 401 и <span className="font-semibold">1..10</span> для 407.
+            и места с номерами <span className="font-semibold">1..9</span> для 401 и <span className="font-semibold">1..12</span> для 407.
           </div>
         </div>
       )}

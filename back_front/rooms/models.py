@@ -39,8 +39,8 @@ class Place(models.Model):
         verbose_name_plural = "Places"
 
     def clean(self):
-        if self.number < 1 or self.number > 10:
-            raise ValidationError("Номер места должен быть от 1 до 10")
+        if self.number < 1:
+            raise ValidationError("Номер места должен быть положительным")
         if self.status == 'occupied' and not self.user:
             raise ValidationError("Занятое место должно иметь пользователя")
         if self.status == 'free' and (self.user or self.occupied_at):

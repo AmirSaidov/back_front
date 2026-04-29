@@ -1,20 +1,25 @@
-# База данных (самое важное!)
-db.sqlite3
-db.sqlite3-journal
-
-# Временные файлы Python
+# Python
 __pycache__/
 *.py[cod]
 *$py.class
-
-# Настройки macOS
-.DS_Store
-
-# Виртуальное окружение (если используешь)
+.env
 env/
 venv/
-.env
-
-# Логи и папки медиа
 *.log
+
+# Django/local data
+db.sqlite3
+db.sqlite3-journal
 media/
+
+# Frontend
+node_modules/
+dist/
+dist-ssr/
+*.local
+
+# Editors and OS files
+.idea/
+.vscode/*
+!.vscode/extensions.json
+.DS_Store
